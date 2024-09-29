@@ -25,7 +25,6 @@ jobs:
       with:
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
         aws-region: ${{ secrets.AWS_REGION }}
-        aws-region: us-east-1
 
     - name: Initialize Terraform
       run: terraform init
